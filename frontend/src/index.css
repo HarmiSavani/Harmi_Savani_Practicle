@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-icons/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-lists/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-richtexteditor/styles/bootstrap5.css";
+@import "../node_modules/video-react/dist/video-react.css";
+
+/* ===== Font Declaration here ===== */
+/* ----- font-Lufga ----- */
+@font-face {
+  font-family: "lufgabold";
+  src: url("../src/assets/fonts/Lufga-Bold.otf") format("otf"),
+    url("../src/assets/fonts/LufgaBold.ttf") format("ttf"),
+    url("../src/assets/fonts/lufga-bold-webfont.woff2") format("woff2"),
+    url("../src/assets/fonts/lufga-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lufgaregular";
+  src: url("../src/assets/fonts/Lufga-Regular.otf") format("otf"),
+    url("../src/assets/fonts/LufgaRegular.ttf") format("ttf"),
+    url("../src/assets/fonts/lufga-regular-webfont.woff2") format("woff2"),
+    url("../src/assets/fonts/lufga-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lufgamedium";
+  src: url("../src/assets/fonts/Lufga-Medium.otf") format("otf"),
+    url("../src/assets/fonts/LufgaMedium.ttf") format("ttf"),
+    url("../src/assets/fonts/lufga-medium-webfont.woff2") format("woff2"),
+    url("../src/assets/fonts/lufga-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lufgalight";
+  src: url("../src/assets/fonts/Lufga-Light.otf") format("otf"),
+    url("../src/assets/fonts/LufgaLight.ttf") format("ttf"),
+    url("../src/assets/fonts/lufga-light-webfont.woff2") format("woff2"),
+    url("../src/assets/fonts/lufga-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lufgabold_italic";
+  src: url("../src/assets/fonts/Lufga-BoldItalic.otf") format("otf"),
+    url("../src/assets/fonts/LufgaBoldItalic.ttf") format("ttf"),
+    url("../src/assets/fonts/lufga-bolditalic-webfont.woff2") format("woff2"),
+    url("../src/assets/fonts/lufga-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ----- Font CyberFall ----- */
+@font-face {
+  font-family: "cyberfall";
+  src: url("../src/assets/fonts/Cyberfall.woff") format("woff");
+  src: url("../src/assets/fonts/Cyberfall.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+  font-family: "lufgamedium", sans-serif;
+  overflow-x: hidden;
+}
+.hollow-text {
+  color: #283347;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #283347;
+}
+::-webkit-inner-spin-button {
+  display: none;
+}
+/* --- To control custom pagination in Home page --- */
+.custom-element > * {
+  background-color: rgba(41, 52, 71, 0.4);
+  flex-basis: 20px;
+  border-radius: 5px;
+  transition: 300ms ease-in;
+}
+.custom-element .swiper-pagination-bullet-active {
+  background-color: #293448;
+  flex-basis: 100px;
+}
+.custom-element .swiper-pagination-bullet-active + * {
+  background-color: rgba(41, 52, 71, 0.8);
+}
+
+/* === Media Queries Here === */
+
+@media (max-width: 1024px) {
+  .custom-element .swiper-pagination-bullet-active {
+    /* flex-basis: 50px; */
+  }
+}
+
+.hint-app-text {
+  color: #7e8591;
+}
+
+.app-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 30px;
+}
+.app-error-text {
+  color: red;
+  /* padding-left: 1.5rem; */
+  /* padding-right: 1.5rem; */
+}
+
+.app-padding-view {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.fill-white-600 {
+  fill: #ffffff;
+}
+
+.app-toaster {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.toaster-text {
+  color: #ffffff;
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+}
+
+.app-table-title {
+  font-weight: 600;
+}
+
+.app-input-style {
+  width: 100%;
+  height: calc(2.5em + 0.9rem + 2px);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6c757d;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.2rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.shadow-card {
+  --tw-shadow: 0 1px 3px 0 #283347, 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+    0 1px 2px -1px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+.dark-shadow-card {
+  --tw-shadow: 0 1px 3px 0 #686868, 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+
+}
+
+.css-19z1ozs-MuiPaper-root-MuiAppBar-root {
+  background-color: #4e7290 !important;
+}
+
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-hyum1k-MuiToolbar-root {
+  background-color: #4e7290 !important;
+}
+
+svg.recharts-surface {
+  margin-top: 0px;
+  margin-left: 26px;
+}
+
+/* Add this CSS to your stylesheets or components */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
